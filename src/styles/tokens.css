@@ -1,19 +1,19 @@
-/* 色・文字・余白（docs/plan.md §4）。夜空の紺、木の茶、紙のクリーム、星の金 */
+/* 色・文字・余白（docs/plan.md §4）。昼は白、夜は黒に近い紺。リンクは夜空の紺（夜は星の金） */
 :root {
-  --bg: #f6f0e4;          /* 紙 */
-  --surface: #fffaf0;
-  --sunken: #ece3d2;
-  --border: #dccfb8;
-  --text: #2b241d;        /* 濃い木 */
-  --text-muted: #5d5246;
-  --accent: #7a4a2a;      /* 木：リンクとボタン */
-  --accent-strong: #5e3720;
-  --on-accent: #fffaf0;
-  --star: #a9781c;        /* 星：小さな装飾だけ */
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --sunken: #f3f5f8;
+  --border: #dfe3ea;
+  --text: #1b2230;        /* 夜空の紺に近い墨色 */
+  --text-muted: #535b69;
+  --accent: #24467a;      /* 夜空の紺：リンクとボタン */
+  --accent-strong: #17305a;
+  --on-accent: #ffffff;
+  --star: #8a6212;        /* 星：小さな装飾だけ */
   --night: #141c2b;       /* 夜空：ヒーローとフッター */
   --on-night: #f3ead8;
   --on-night-muted: #c9bfae;
-  --shadow: rgb(43 36 29 / 0.1);
+  --shadow: rgb(20 28 43 / 0.12);
 
   --font-body: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", sans-serif;
   --font-heading: "Hiragino Mincho ProN", "Yu Mincho", "YuMincho", "Noto Serif JP", "Noto Serif CJK JP", serif;
@@ -24,22 +24,23 @@
   color-scheme: light;
 }
 
+/* 夜：黒に近い紺 */
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #12171f;
-    --surface: #1a212c;
-    --sunken: #0e1219;
-    --border: #2c3542;
-    --text: #efe6d4;
-    --text-muted: #b9ae9b;
-    --accent: #e0b07a;
-    --accent-strong: #f0c995;
-    --on-accent: #1b140d;
+    --bg: #0a0e16;
+    --surface: #121826;
+    --sunken: #070a10;
+    --border: #232b3a;
+    --text: #edf0f5;
+    --text-muted: #a9b1bf;
+    --accent: #e6c36a;
+    --accent-strong: #f2d48a;
+    --on-accent: #141c2b;
     --star: #e6c36a;
-    --night: #0b0f16;
+    --night: #070a10;
     --on-night: #f3ead8;
     --on-night-muted: #b9ae9b;
-    --shadow: rgb(0 0 0 / 0.35);
+    --shadow: rgb(0 0 0 / 0.4);
     color-scheme: dark;
   }
 }
